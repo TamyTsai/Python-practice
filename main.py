@@ -143,7 +143,7 @@ number2 = input("請輸入第二個數字： ")
 print(number1 + number2)
 # -->85
 
-#所以用imput()得到 用戶輸入的內容，讓變數替換為 該內容 後，還要將其轉換回 數字 --整數相加
+#所以用input()得到 用戶輸入的內容，讓變數替換為 該內容 後，還要將其轉換回 數字 --整數相加
 number1 = input("請輸入第一個數字： ")
 number2 = input("請輸入第二個數字： ")
 print(int(number1) + int(number2))
