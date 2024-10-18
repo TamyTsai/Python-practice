@@ -1,3 +1,5 @@
+# 多重選擇 的 條件判斷
+
 sweetness_level = input("請選擇你要的甜度：（1）正常甜度, （2）半糖, （3）微糖, （其他）不加糖： ")  # 將使用者輸入答案字串，指定給sweetness_level變數
 if sweetness_level== '1': # 條件為真時，執行以下敘述
 	print("你選擇的是正常甜度，加4匙糖")
