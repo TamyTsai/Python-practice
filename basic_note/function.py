@@ -71,3 +71,43 @@ value=add(8,5.5)
 print(value)
 # -->13.5
 #    None
+
+# -------------------
+
+# 定義函式（副程式：函數及程序）
+# 定義函數
+def 函數名稱(參數1, 參數2): # 有回傳值的副程式稱為「函數（function）」
+	# 函數主體（必須內縮）
+	return "回傳值"
+# 定義程序
+def greeting(): # 沒有回傳值的副程式則稱為「程序（procedure）」
+	print("Hello!!!")
+     
+# 呼叫函式
+greeting()
+
+# 副程式在使用前必須先宣告
+result = add(3, 5) # 不可未宣告就呼叫
+# 大多數的程式語言，要求副程式在使用前必須先宣告，目的是檢查副程式的「呼叫」，與副程式的「宣告」是否一致，Python也不例外。
+print(result)
+
+def add(a, b):
+	return a + b 
+
+# 參數與引數數量要一致
+def add(a, b): # 在呼叫函式時，提供給函式的資料稱為引數（argument），接受引數的稱為參數（parameter），故此處a及b為參數
+	return a + b
+
+result = add(3) # 此處3為引數，參數與引數數量不可不同
+print(result)
+
+# 注意函式是否有回傳值
+def greeting(): # 程序
+	print("Hello")
+	
+def add(a, b): # 函數
+	return a+b
+
+res = greeting() # 因為greeting為「程序」，屬於不會回傳值的副程式，故本行敘述作用僅僅為呼叫greeting程序，因此輸出Hello，並未將任何值指定給res變數
+add(3, 5) # add為「函數」，屬於有回傳值的副程式，但該程序中之敘述未有輸出任何東西之敘述，且此處未將呼叫函數所得到的回傳值指定給任何變數，故本行敘述無作用
+print(res) # 因前面沒有將任何值指定給res變數，故輸出的結果為「None」
